@@ -12,7 +12,20 @@
 	<h1>Aplicación 3 - Ventanas</h1>
 	<div id="content">
 	<script>
-		 
+		 var valor = prompt("Cuantos estudiantes de ambos turnos desea ver?", "1");
+		 if(valor > 0 && valor <= alumnos.length){
+			for (var i = 0; i < valor; i++) {				
+				num = alumnos[i][0];	//Numero de orden
+				nom = alumnos[i][1];	//Nombre
+				ape = alumnos[i][2];	//Apellido
+				tur = fnTurno(alumnos[i][3]);	//Turno
+				res = " (" +(i+1) + "/" + alumnos.length+")";
+				fnGenerarTabla(res,num,nom,ape,tur);
+			}
+		 }else{
+			alert("solo se tiene registrado" + alumnos.length +" alumnos");
+			document.writeln("<h2>Inténtelo nuevamente... </h2>");
+		 }
 	</script>
 	</div>
 </body>

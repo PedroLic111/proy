@@ -9,6 +9,33 @@
 </head>
 <body>
 <div id="content">
+	<form action="p00_validada.php" method="post" onsubmit="return fnValidar04();">
+		<table>
+			<tr>
+				<th colspan="2" class="titulo">Aplicacion 4 - Archivos tipo imagenes, pdf, etc.</th>
+			</tr>
+			<tr>
+				<td id="tdIzq">Selecciones archivos JPG o PNG: </td>
+				<td id="tdDer"><input type="file" name="fileJPGpng" accept=".jpg, .png" value="" required></td>
+			</tr>
+			<tr>
+				<td id="tdIzq">Seleccione CUALQUIER imagen:</td>
+				<td id="tdDer"><input type="file" name="fileImagen" accpet="image/*" value="" required></td>
+			</tr>
+			<tr>
+				<td id="tdIzq">Seleccione archivo PDF:</td>
+				<td id="tdDer"><input type="file" name="filePDF" accept=".pdf" value="" required></td>				
+			</tr>
+
+			<tr>
+				<td id="tdIzq">Escribir un correo válido:</td>
+				<td id="tdDer"><input type="text" name="txtCorreo" pattern="^[\w._%-]+@[\w.-]+\.[a-zA-Z]{2,4}$" value="" required></td>
+			</tr>
+			<th colspan="2" class="subTitulo">
+				<input class="boton" type="submit" name="btnVer" value="Pasar">
+			</th>
+		</table>
+	</form>
 	 
 </div>
 </body>

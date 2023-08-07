@@ -9,8 +9,31 @@
 	<script src="js/arrayAlumnos.js"></script>
 </head>
 <body>
-<div id="content">
-	
-</div> 
+	<div id="content">
+		<form action="p00_validada.php" method="post" onsubmit="return fnValidar06();">
+		<table>
+			<tr> 
+				<th colspan="2" class="titulo">Aplicación 6 - (Conteo por GÉNERO) (Evidencia 1)</th>
+			</tr>
+			<tr>
+				<td id="tdIzq">Seleccione turno:</td>
+				<td id="tdDer">
+					<select name="lstGenero" id="lstGenero" onchange="Conteo(this.value,alumnos)" >
+						<option value="">Seleccione...</option>
+						<option value="M">Masculino</option>
+						<option value="F">Femenino</option>						
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td id="tdIzq">Resultado</td>
+				<td id="tdDer"><input type="text" name="txtResult" id="txtResult" value=""></td>
+			</tr>
+			<th colspan="2" class="subTitulo">
+				<input class="boton" type="submit" name="btnVer" value="Pasar">
+			</th>
+		</table>
+		</form>
+	</div> 
 </body>
 </html>

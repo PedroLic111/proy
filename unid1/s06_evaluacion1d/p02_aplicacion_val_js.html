@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/estilosEval1.css">
+	<script src="js/form02validar.js"></script>
+</head>
+<body>
+	<h1>Aplicación 2 - Validación con lenguaje de programación JavaScript</h1>
+
+	<div id="content">
+	<form id="form1" action="p00_validada.php" method="post" >
+		<table>
+			<tr>
+				<th colspan="2" class="titulo">Aplicación 2 - Validación con JavaScript</th>
+			</tr>
+			<tr>
+				<td id="tdIzq">Escriba texto* (1 punto):</td>
+				<td id="tdDer"><input type="text" name="texto" id="texto" value="" required></td>
+			</tr>
+			<tr>
+				<td id="tdIzq">Elija turno* (1 punto):</td>
+				<td id="tdDer">
+					<input type="radio" name="T" id="T" value="" > Día
+					<input type="radio" name="T" id="T"  value="" > Noche
+					<input type="radio" name="T" id="T" value="" > Tarde
+				</td>
+			</tr>
+			<tr>
+				<td id="tdIzq">Elija tres preferencias cualesquiera* (3 puntos):</td>
+				<td id="tdDer">
+					<input type="checkbox" name="M" id="M" value="1" >Música
+					<input type="checkbox" name="C" id="C" value="1" >Cine
+					<input type="checkbox" name="T" id="T" value="1" >Televisión
+					<input type="checkbox" name="N" id="N" value="1" >Natación
+				</td>
+			</tr>
+			<th colspan="2" class="subTitulo">
+				<input class="boton" type="submit" name="btnVer" value="Pasar">
+			</th>
+			
+		</table>
+
+	</form>
+	</div>
+</body>
+</html>

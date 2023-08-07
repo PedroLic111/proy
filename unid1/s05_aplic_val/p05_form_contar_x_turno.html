@@ -10,7 +10,7 @@
 </head>
 <body>
 <div id="content">
-	<form action="p00_validada.php" method="post" >
+	<form action="p00_validada.php" method="post" onsubmit="return fnValidar05();">
 	<table>
 		<tr> 
 			<th colspan="2" class="titulo">Aplicación 5 - Formularios (Conteo por TURNO)</th>
@@ -18,7 +18,7 @@
 		<tr>
 			<td id="tdIzq">Seleccione turno:</td>
 			<td id="tdDer">
-				<select name="lstTurno" id="lstTurno" >
+				<select name="lstTurno" id="lstTurno" onchange="verConteo(this.value,alumnos)" >
 					<option value="">Seleccione...</option>
 					<option value="M">Turno día</option>
 					<option value="N">Turno noche</option>

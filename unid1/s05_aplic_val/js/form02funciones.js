@@ -1,5 +1,11 @@
 function fnValidar02()
 {
-    let xNombre = document.getElementById(txtNombre)
+    var xNombre = document.getElementById("txtNombre")
+    if (!(xNombre)){
+        alert("Escriba NOMBRES... ");
+        return false;
+    }
+
+    
  
 }

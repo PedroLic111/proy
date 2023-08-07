@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+</head>
+<body>
+<div class="container">
+	<header class="row bg-secondary">
+		Header (Cabecera)
+		<img src="img/header.jpg" >
+	</header>
+
+	<nav class="row bg-danger">
+		
+		<nav class="navbar navbar-expand-lg">
+			<div class="container-fluid">
+			  <a class="navbar-brand" href="#">Santiago</a>			  
+			  <div class="collapse navbar-collapse" >
+				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+				  <li class="nav-item">
+					<a class="nav-link active" href="#">Inico</a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link" href="#">Introduccion</a>
+				  </li>
+				  <li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+					  Informaciòn
+					</a>
+					<ul class="dropdown-menu">
+					  <li><a class="dropdown-item" href="#">Dis Web</a></li>
+					  <li><a class="dropdown-item" href="#">Dis Graf</a></li>
+					  <li><hr class="dropdown-divider"></li>
+					  <li><a class="dropdown-item" href="#">Herram Mult</a></li>
+					</ul>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link">Habilitado</a>
+				  </li>
+				</ul>				
+			  </div>
+			</div>
+		  </nav>
+		  
+	</nav>
+
+	<section class="row bg-primary"> 
+		<article class="col-md-6 bg-warning"> 
+			Articulo 1
+			<img src="img/galeria1.jpg" >
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam voluptates id porro vel ipsam quod nemo deserunt quisquam itaque, quaerat voluptatum rem facilis ab atque magnam reiciendis expedita corrupti culpa?</p>
+		</article>
+		
+		<article class="col-md-4 bg-success">
+			Articulo 2
+			<img src="img/colibri.jpg">
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut alias neque rem libero sit repellendus voluptate nam omnis, minus soluta nobis sint vel vitae maiores saepe impedit beatae fugit excepturi?</p>
+		</article>
+
+		<aside class="col-md-2 bg-primary">
+			aside (Apartado)
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro debitis sint consequuntur commodi praesentium fugit harum delectus. Rem maxime sint, enim, quod est facilis, reprehenderit expedita dicta aperiam officiis cumque.
+			
+				<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Toggle right offcanvas</button>
+
+				<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+				<div class="offcanvas-header">
+					<h5 class="offcanvas-title" id="offcanvasRightLabel">SANTIAGO</h5>
+					
+					<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+					
+				</div>
+				<div class="offcanvas-body">
+					
+					<ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+						<li><hr class="dropdown-divider"></li>
+						<li class="nav-item">
+						  <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+						</li>
+						<li class="nav-item">
+						  <a class="nav-link" href="#">Introduciion</a>
+						</li>
+						<li class="nav-item dropdown">
+						  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+							Informacion
+						  </a>
+						  <ul class="dropdown-menu">
+							<li><a class="dropdown-item" href="#">Dis Web</a></li>
+							<li><a class="dropdown-item" href="#">Dis Gràf</a></li>
+							<li>
+							  <hr class="dropdown-divider">
+							</li>
+							<li><a class="dropdown-item" href="#">Herr Mult</a></li>
+						  </ul>
+						</li>
+						<li><hr class="dropdown-divider"></li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Cuenta</a>
+						  </li>
+					  </ul>
+					  
+					  
+
+				</div>
+				</div>
+			
+		</aside>
+	</section>
+
+	<footer class="row bg-dark text-light">
+		footer (Pie de página)
+	</footer>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+
+<div className="container">
+          
+	<header className="row bg-secondary">
+	  Header (Cabecera)
+	  <C01componente />
+	</header>
+
+	<nav className="row bg-success">
+	  nav (Navegador-menu)
+	</nav>
+
+	<section className="row bg-primary"> 
+	  <article className="col-md-6 bg-warning"> 
+		Articulo 1
+		<Matriz />
+	  </article>
+	  
+	  <article clclassNamess="col-md-4 bg-secondary">
+		Articulo 2
+		<EjemploDeEstado />
+		<br/>
+		<EjemploDeDobleEstado />
+		<br/>
+		<OperadorTernario xEdad = "20" />
+		<br/>
+		<ComponenteConVariable xVariable="Hola mundo... desde... React" />
+	  </article>
+
+	  <aside className="col-md-2 bg-primary">
+		aside (Apartado)
+		<C03componenteConCss />
+	  </aside>
+	</section>
+
+	<footer className="row bg-dark text-light">
+	  footer (Pie de página)
+	  <C02contador />
+	</footer>
+  </div>
+  -->

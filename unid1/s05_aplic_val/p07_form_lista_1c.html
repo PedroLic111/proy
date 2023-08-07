@@ -18,7 +18,7 @@
 		<tr>
 			<td id="tdIzq">Seleccione turno:</td>
 			<td id="tdDer">
-				<select name="lstTurno" id="lstTurno">
+				<select name="lstTurno" id="lstTurno" onchange="verTablas(this.value,alumnos)">
 					<option value="">Seleccione...</option>
 					<option value="M">Turno día</option>
 					<option value="N">Turno noche</option>
@@ -30,7 +30,7 @@
 			<td colspan="2"><div name="marco" id="marco">Resultado aqui...</div></td>
 		</tr>
 		<th colspan="2" class="subTitulo">
-			<input class="boton" type="reset" name="btnVer" value="Borrar">
+			<input class="boton" type="reset" name="btnVer" onclick="borrarMarco();" value="Borrar">
 		</th>
 	</table>
 	</form>
